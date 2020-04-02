@@ -1,4 +1,4 @@
-## DeepKneeExplainer
+## COVIDExplainer: Explainable COVID-19 Diagnosis from Chest X-rays
 Supplementary materials for "COVIDExplainer: Explainable COVID-19 Diagnosis from Chest Radiography Images" submitted to ECML-PKDD'2020. We provide details of dataset, preprocessing, network architectures, and some additional results. Nevertheless, we'll provide trained models, preprocessed data, interactive Python notebooks, and a web application showing live demo. As planned, we keep this repo updated. 
 
 ### Methods

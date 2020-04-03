@@ -27,8 +27,8 @@ A quick example on a small dataset can be performed as follows:
 ### Citation request
 If you use the code of this repository in your research, please consider citing the folowing papers:
 
-    @inproceedings{COVIDExplainer,
-        title={COVIDExplainer: Explainable COVID-19 Diagnosis from Chest Radiography Images},
+    @inproceedings{DeepCOVIDExplainer,
+        title={DeepCOVIDExplainer: Explainable COVID-19 Diagnosis from Chest Radiography Images},
         author={Anonymized for review},
         conference={ECML-PKDD'2020},
         publisher={Under review},

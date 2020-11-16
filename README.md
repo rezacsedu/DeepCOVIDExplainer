@@ -1,9 +1,8 @@
 ## DeepCOVIDExplainer: Explainable COVID-19 Diagnosis from Chest X-rays
-Supplementary materials for "DeepCOVIDExplainer: Explainable COVID-19 Diagnosis from Chest Radiography Images" submitted to ECML-PKDD'2020. We provide details of dataset, preprocessing, network architectures, and some additional results. Nevertheless, we'll provide trained models, preprocessed data, interactive Python notebooks, and a web application showing live demo. As planned, we keep this repo updated. 
+Supplementary materials for "DeepCOVIDExplainer: Explainable COVID-19 Diagnosis from Chest Radiography Images" accepted at IEEE International Conference on Bioinformatics and Biomedicine (BIBM'2020), to be held in Seoul, South Korea. We provide details of dataset, preprocessing, network architectures, and some additional results. Nevertheless, we'll provide trained models, preprocessed data, interactive Python notebooks, and a web application showing live demo. As planned, we keep this repo updated. 
 
 ### Methods
-The pipeline of "DeepCOVIDExplainer" consist of preprocessing, classification, snapshot neural ensemble, and decision visualizations.
-After necessary preprocessing of CXR images, DenseNet, ResNets, and VGGNets are trained in a transfer learning setting, creating their model snapshots, followed by neural snapshot ensemble based on averaging Softmax class posterior and the prediction maximization of best performing models. Finally, class-discriminating attention maps are generated using gradient-guided class activation maps (Grad-CAM++) and layer-wise relevance propagation (LRP) to provide explanations of the predictions and to identify the critical regions on patients chest.  
+The pipeline of "DeepCOVIDExplainer" consist of preprocessing, classification, snapshot neural ensemble, and decision visualizations. After necessary preprocessing of CXR images, DenseNet, ResNets, and VGGNets are trained in a transfer learning setting, creating their model snapshots, followed by neural snapshot ensemble based on averaging Softmax class posterior and the prediction maximization of best performing models. Finally, class-discriminating attention maps are generated using gradient-guided class activation maps (Grad-CAM++) and layer-wise relevance propagation (LRP) to provide explanations of the predictions and to identify the critical regions on patients chest.  
 
 #### Erratum 
 Although we mentioned in the paper mistakenly that network's weights were initialized with ImageNet, we rather trained them from scratch (please refer to the Jupyter notebooks). The reason is that ImageNet contains photos of general objects, which would activate the internal representation of network's hidden layers with geometrical forms, colorful patterns, or irrelevent shapes that are usually not present in biomedical images, e.g., x-ray, MRIs, or CT. 
@@ -26,10 +25,10 @@ A quick example on a small dataset can be performed as follows:
 If you use the code of this repository in your research, please consider citing the folowing papers:
 
     @inproceedings{DeepCOVIDExplainer,
-        title={DeepCOVIDExplainer: Explainable COVID-19 Diagnosis from Chest Radiography Images},
-        author={Anonymized for review},
-        conference={ECML-PKDD'2020},
-        publisher={Under review},
+        title={DeepCOVIDExplainer: Explainable COVID-19 Diagnosis from Chest X-ray Images},
+        author={Karim, Md Rezaul and Döhmen, Till and Rebholz-Schuhmann, Dietrich and Decker, Stefan and Cochez, Michael and Beyan, Oya},
+        conference={IEEE International Conference on Bioinformatics and Biomedicine (BIBM'2020)},
+        publisher={IEEE},
         year={2020}
     }
 
